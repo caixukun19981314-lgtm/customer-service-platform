@@ -1,0 +1,8 @@
+{
+  "name": "customer-service-platform",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Multi-tenant customer service platform prototype",
+  "scripts": {"start": "node server.js"},
+  "engines": {"node": ">=18"}
+}

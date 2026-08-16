@@ -1,0 +1,24 @@
+{
+  "users": [
+    {"id":"u_admin","tenantId":"tenant_demo","email":"admin@demo.local","password":"admin123","name":"Demo Admin","role":"owner"}
+  ],
+  "tenants": [
+    {"id":"tenant_demo","name":"Demo 商家","createdAt":"2026-08-16T00:00:00.000Z"}
+  ],
+  "plugins": [
+    {"id":"plugin_ee11","tenantId":"tenant_demo","name":"EE11","status":"active","automationId":"auto_ee11","groupId":"group_ee11"},
+    {"id":"plugin_66gg","tenantId":"tenant_demo","name":"66GG","status":"active","automationId":"auto_66gg","groupId":"group_66gg"}
+  ],
+  "automations": [
+    {"id":"auto_ee11","tenantId":"tenant_demo","name":"EE11 自动化","description":"EE11 入口 → AI → 客服分配","status":"active"},
+    {"id":"auto_66gg","tenantId":"tenant_demo","name":"66GG 自动化","description":"66GG 入口 → AI → 客服分配","status":"active"}
+  ],
+  "groups": [
+    {"id":"group_ee11","tenantId":"tenant_demo","name":"EE11 客服组","status":"active","members":[]},
+    {"id":"group_66gg","tenantId":"tenant_demo","name":"66GG 客服组","status":"active","members":[]}
+  ],
+  "shortcuts": [
+    {"id":"shortcut_ee11","tenantId":"tenant_demo","pluginId":"plugin_ee11","name":"EE11 联系客服","type":"automation","automationId":"auto_ee11","slug":"ee11-contact","active":true},
+    {"id":"shortcut_66gg","tenantId":"tenant_demo","pluginId":"plugin_66gg","name":"66GG 联系客服","type":"automation","automationId":"auto_66gg","slug":"66gg-contact","active":true}
+  ]
+}
